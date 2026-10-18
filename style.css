@@ -279,5 +279,6 @@ a:hover {
     }
 }
 .brand p{
-    font-weight:700 !important;
+    font-weight: 900 !important;
+    -webkit-text-stroke; 0.5px;
 }
