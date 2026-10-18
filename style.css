@@ -227,6 +227,7 @@ a:hover {
 }
 
 .separator::before,
+
 .separator::after {
     content: "";
     flex: 1;
@@ -276,4 +277,7 @@ a:hover {
     .form-panel {
         padding: 30px 22px;
     }
+}
+.brand p{
+    font-weight:700 !important;
 }
