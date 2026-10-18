@@ -1,0 +1,278 @@
+/* 1. Basic page settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f4fa;
+    color: #172b4d;
+    min-height: 100vh;
+}
+
+/* 2. Main layout */
+.page-container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 680px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(20, 40, 80, 0.12);
+}
+
+/* 3. Left welcome panel */
+.welcome-panel {
+    flex: 1;
+    background: linear-gradient(145deg, #082d70, #1552a0);
+    color: white;
+    padding: 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.register-welcome {
+    background: linear-gradient(145deg, #10254e, #24599b);
+}
+
+/* 4. University branding */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin: 15px;
+    border: 2px solid #f2c94c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2c94c;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.brand h2 {
+    font-size: 21px;
+}
+
+.brand p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* 5. Welcome message */
+.welcome-text {
+    margin: 45px 0;
+}
+
+.eyebrow {
+    color: #b48a12;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+.welcome-panel .eyebrow {
+    color: #f2c94c;
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.welcome-text > p:last-child {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.panel-footer {
+    font-size: 12px;
+    color: #d9e5ff;
+}
+
+/* 6. Right form panel */
+.form-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-content {
+    width: 100%;
+    max-width: 380px;
+}
+
+.form-content h1 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #68778f;
+    font-size: 14px;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+/* 7. Form fields */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccd5e3;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #1552a0;
+    box-shadow: 0 0 0 3px rgba(21, 82, 160, 0.12);
+}
+
+/* 8. Remember me and help link */
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 5px 0 22px;
+    font-size: 12px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+a {
+    color: #1552a0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 9. Buttons */
+.btn-primary,
+.btn-secondary {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #103d85;
+    color: white;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #082d70;
+}
+
+.btn-secondary {
+    border: 1px solid #1552a0;
+    color: #1552a0;
+    background-color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #edf3ff;
+    text-decoration: none;
+}
+
+/* 10. Login and account links */
+.separator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0;
+    color: #7a8799;
+    font-size: 10px;
+}
+
+.separator::before,
+.separator::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #dce2ec;
+}
+
+.login-prompt {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.small-note {
+    text-align: center;
+    color: #7a8799;
+    font-size: 11px;
+    margin-top: 25px;
+}
+
+/* 11. Mobile phone layout */
+@media (max-width: 760px) {
+    .page-container {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+        min-height: 100vh;
+    }
+
+    .welcome-panel {
+        padding: 25px;
+    }
+
+    .welcome-text {
+        margin: 30px 0;
+    }
+
+    .welcome-text h1 {
+        font-size: 28px;
+    }
+
+    .panel-footer {
+        margin-top: 10px;
+    }
+
+    .form-panel {
+        padding: 30px 22px;
+    }
+}
