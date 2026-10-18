@@ -67,7 +67,8 @@ body {
 }
 
 .brand p {
-    font-size: 12px;
+    font-size: 16px;
+    font-weght: bold;
     margin-top: 4px;
 }
 
