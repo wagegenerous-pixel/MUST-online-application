@@ -1,25 +1,21 @@
-
-// LOGIN FORM
+// LOGIN PAGE
 const loginForm = document.getElementById("loginForm");
 
 if (loginForm) {
     loginForm.addEventListener("submit", function(event) {
+
         event.preventDefault();
 
-        const student = document.getElementById("student").value.trim();
+        const student = document.getElementById("student").value;
         const password = document.getElementById("password").value;
 
-        if (student === "" || password.trim() === "") {
-            alert("Please fill in all the fields.");
-        } else {
-            alert("Your login details have been received!");
-        }
+        alert("Your login details have been received!");
+
     });
 }
 
 
-// REGISTRATION FORM
-
+// REGISTRATION PAGE
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
