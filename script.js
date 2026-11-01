@@ -1,21 +1,3 @@
-// LOGIN PAGE
-const loginForm = document.getElementById("loginForm");
-
-if (loginForm) {
-    loginForm.addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        const student = document.getElementById("student").value;
-        const password = document.getElementById("password").value;
-
-        alert("Your login details have been received!");
-
-    });
-}
-
-
-// REGISTRATION PAGE
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
