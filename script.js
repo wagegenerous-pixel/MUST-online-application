@@ -1,3 +1,22 @@
+
+const loginForm = document.getElementById("loginForm");
+
+loginForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const student = document.getElementById("student").value.trim();
+
+    const password = document.getElementById("password").value;
+
+    if (student === "" || password.trim() === "") {
+        alert("Please fill in all the fields.");
+    } else {
+        alert("Your login details have been received!");
+    }
+
+});
+
 const registerForm = document.getElementById("registerForm");
 
 if (registerForm) {
