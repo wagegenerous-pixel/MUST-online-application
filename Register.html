@@ -1,40 +1,54 @@
+
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>MUST Application System | Create Account</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <main class="page-container">
 
         <section class="welcome-panel register-welcome">
+
             <div class="brand">
-                <div class="brand">
-                <img src ="MUST.jpg"
-                alt ="MUST university Logo"
-                class="brand-logo">
+
+                <img src="MUST.jpg"
+                     alt="MUST University Logo"
+                     class="brand-logo">
+
                 <div>
                     <h2>MUST</h2>
                     <p>Student Application System</p>
                 </div>
+
             </div>
 
         </section>
 
         <section class="form-panel">
+
             <div class="form-content">
+
                 <p class="eyebrow">NEW STUDENT</p>
+
                 <h1>Create an Account</h1>
+
                 <p class="subtitle">
                     Fill in your details to get started.
                 </p>
 
-                <form>
+                <form id="registerForm">
+
                     <div class="form-group">
                         <label for="fullname">Full Name</label>
+
                         <input
                             type="text"
                             id="fullname"
@@ -46,6 +60,7 @@
 
                     <div class="form-group">
                         <label for="email">Email Address</label>
+
                         <input
                             type="email"
                             id="email"
@@ -56,7 +71,10 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="regnumber">Student Number (if assigned)</label>
+                        <label for="regnumber">
+                            Student Number (if assigned)
+                        </label>
+
                         <input
                             type="text"
                             id="regnumber"
@@ -66,6 +84,7 @@
 
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
+
                         <input
                             type="tel"
                             id="phone"
@@ -77,6 +96,7 @@
 
                     <div class="form-group">
                         <label for="newpassword">Create Password</label>
+
                         <input
                             type="password"
                             id="newpassword"
@@ -89,6 +109,7 @@
 
                     <div class="form-group">
                         <label for="confirm">Confirm Password</label>
+
                         <input
                             type="password"
                             id="confirm"
@@ -102,17 +123,23 @@
                     <button type="submit" class="btn-primary">
                         Create Account
                     </button>
+
                 </form>
+
+                <p id="registerMessage"></p>
 
                 <p class="login-prompt">
                     Already have an account?
                     <a href="index.html">Login here</a>
                 </p>
+
             </div>
+
         </section>
 
     </main>
+
     <script src="script.js"></script>
-</body>
+
 </body>
 </html>
